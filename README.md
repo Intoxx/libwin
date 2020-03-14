@@ -2,8 +2,8 @@
 **_This project is still in alpha, many features will be added over time._**
 
 This library allows you to create **GUI** *(Graphical User Interfaces)* for **World of Warcraft** while respecting a **MVC** *(Model View Controller)* design pattern.
+
 Every widget supports **theming**.
-Start using now and create your shiny interfaces without any headaches!
 
 ### Functionalities
 - Basic widgets

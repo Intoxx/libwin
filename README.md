@@ -8,19 +8,19 @@ Every widget supports **theming**.
 ### Functionalities
 - Basic widgets
 - Theming
+- Events
 
-### Example
+### Example : window layout with buttons
 ```lua
--- Create a window to hold our layout
-local w = libwin.window:new(UIParent, 300, 200, "My title");
--- Create an horizontal layout which will manage our widgets
-local hlayout = libwin.hlayout:new(w.f);
+-- Create a window with "Example" as the title
+local w = libwin.window:new(UIParent, 300, 200, "Example");
 -- Create two buttons
 local search = libwin.button:new(layout.f, "search");
 local save = libwin.button:new(layout.f, "save");
--- Add them to the layout
+-- Create an horizontal layout which will manage our widgets
+local hlayout = libwin.hlayout:new(w.f);
 hlayout:add(search, "search");
 hlayout:add(save, "save");
--- Set the window layout
+-- Tell the window to use the layout
 w:set_layout(hlayout);
 ```

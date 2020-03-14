@@ -1,0 +1,30 @@
+# Interface: 11303
+## Author: Edwin
+## Version: 0.1
+## Title: Libwin
+## Notes: GUI library
+## X-Website: http://libwin.defias-brotherhood.com
+
+# Theme
+widgets/style.lua
+
+# Widgets
+
+widgets/hlayout/model.lua
+widgets/hlayout/view.lua
+widgets/hlayout/controller.lua
+
+widgets/line/model.lua
+widgets/line/view.lua
+widgets/line/controller.lua
+
+widgets/window/model.lua
+widgets/window/view.lua
+widgets/window/controller.lua
+
+widgets/button/model.lua
+widgets/button/view.lua
+widgets/button/controller.lua
+
+# Entry point
+libwin.lua

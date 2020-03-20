@@ -5,23 +5,26 @@ This library allows you to create **GUI** *(Graphical User Interfaces)* for **Wo
 
 It is a very lightweight library and every widget supports **theming**.
 
-## Functionalities
-- Basic widgets
-- Theming
-- Events
+## How does it work
+You basically have access to the following :
 
 ### Widgets
-- Window *(with titlebar, minimize, maximize and close buttons)*
-- Line *(to create simple borders or separators)*
+- Layout *(HORIZONTAL and VERTICAL)*
+- Window *(titlebar, minimize, maximize and close buttons)*
+- Line *(border, separator ...)*
+- Label
 - Button
 
 ### Events
 Every widget has access to **3 different STATES**.
-- NORMAL
-- HOVER
-- ACTIVE
+- NORMAL *(default state)*
+- HOVER *(when hovering with the mouse)*
+- FOCUS *(when selecting the widget through your mouse or keyboard)*
 
-### Example : window layout with buttons
+### Theming
+Every widget supports theming.
+
+## Example : window layout with buttons
 ```lua
 -- Create a window with "Example" as the title
 local w = libwin.window:new(UIParent, 300, 200, "Example");

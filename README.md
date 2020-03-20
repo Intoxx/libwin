@@ -16,11 +16,12 @@ Every widget supports **theming**.
 local w = libwin.window:new(UIParent, 300, 200, "Example");
 -- Create an horizontal layout which will manage our widgets
 local hlayout = libwin.hlayout:new(w.f);
-hlayout:add(search, "search");
-hlayout:add(save, "save");
 -- Create two buttons
 local search = libwin.button:new(hlayout.f, "search");
 local save = libwin.button:new(hlayout.f, "save");
+-- Add them to the layout
+hlayout:add(search, "search");
+hlayout:add(save, "save");
 -- Tell the window to use the layout
 w:set_layout(hlayout);
 ```

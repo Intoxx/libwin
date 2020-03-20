@@ -5,10 +5,21 @@ This library allows you to create **GUI** *(Graphical User Interfaces)* for **Wo
 
 It is a very lightweight library and every widget supports **theming**.
 
-### Functionalities
+## Functionalities
 - Basic widgets
 - Theming
 - Events
+
+### Widgets
+- Window *(with titlebar, minimize, maximize and close buttons)*
+- Line *(to create simple borders or separators)*
+- Button
+
+### Events
+Every widget has access to **3 different STATES**.
+- NORMAL
+- HOVER
+- ACTIVE
 
 ### Example : window layout with buttons
 ```lua
